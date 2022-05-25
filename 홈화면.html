@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> 독일 상세 페이지 </title>
+	<style>
+		header{
+        width: 100%px;
+        height: 200px;
+        border-width : none;
+
+    }
+    
+    main{
+        width: 100%;
+        height: 100%px;
+        float: left;
+        margin: 2px;
+        border-width : none;
+
+    }
+    section{
+        width: 100%px;
+        height: 100%px;
+        margin: 2px;
+        border-width : none;
+
+    }
+    footer{
+        width: 100%px;
+        height: 100%px;
+        margin: 2px;
+        border-width : none;
+
+    }
+	div {
+        
+        font-weight:bold;
+		
+
+    }
+    #box1 {
+        padding-top: 10px;
+		padding-left: 140px;
+    }
+	#td1 {
+		padding-left: 10px;
+		padding-top: 10px;
+	}
+	@font-face {
+		font-family: 'neon';
+		src: url('AppleSDGothicNeoB.ttf') format('truetype');
+	}
+	body {
+		font-family: 'neon';
+	}
+	.jb-wrap {
+	width: 100%;
+	margin: 10px auto;
+	border: 1px solid #000000;
+	position: relative;
+	}
+	.jb-wrap img {
+		width: 100%;
+		vertical-align: middle;
+	}
+	.jb-text {
+		padding: 5px 10px;
+		font-size: 60px;
+		
+		text-align: center;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate( -50%, -50% );
+	}
+	table { border-collapse:collapse }
+	td, th, tr, tbody {
+		border:none;
+	}
+	#bt0 {
+			margin-right:-4px;
+			border-radius: 5px;
+			width: 220px;
+			box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 3px 5px 0 rgba(0,0,0,0.19);
+			
+		}
+		
+		#bt1 {
+			margin-right:-4px;
+			border-top-left-radius: 5px;
+			border-bottom-left-radius: 5px;
+			width: 235px;
+		}
+		#bt2 {
+			margin-right:-4px;
+			margin-left:-3px;
+			border-right: 0px;
+			width: 235px;
+		}
+		#bt3 {
+			border-left: 0px;
+			margin-right:-4px;
+			margin-left:-3px;
+			width: 235px;
+		}
+		#bt4 {
+			margin-left:-3px;
+			border-top-right-radius: 5px;
+			border-bottom-right-radius: 5px;
+			width: 235px;
+		}
+		#btn_group button{
+			border: 2px none gray;
+			background-color: rgba(0,0,0,0);
+			color: #5586EB;
+			padding: 5px;
+		}
+		#btn_group button:hover{
+			color:white;
+			background-color: #4374D9;
+		}
+    </style>
+	<script>
+		function movePageAmericas(){
+			location.href="미주 페이지.html";
+		}
+		function movePageNortheast(){
+			location.href="동북아시아 페이지.html";
+		}
+		function movePageEurope(){
+			location.href="유럽 페이지.html";
+		}
+		function movePageSoutheast(){
+			location.href="동남아시아 페이지.html";
+		}
+		function movePageHome(){
+			location.href="홈화면.html";
+		}
+		
+	</script>
+</head>
+
+<body>
+	<header style="width= 100%; height= 100%" align="center" height="200px" onclick="movePageHome()">
+        <br> <br>
+		
+		
+		<table border="" style="width: 50%;" align="center" frame="void" rules="groups" cellpadding="10">
+				<tbody>
+				<tr style="width: 70%;">
+				<td style="width: 30%;" valign='center' align='right'>
+					
+					<img name="ig" src="떠나고 로고.png" width="100px" height="100px" border="0">
+					
+				</td>
+				<td style="width: 70%;" valign="center" align="left">
+					
+					<font size='7em' color="#353535">지금 당장 떠나 GO!</font>
+				</tr>
+				</tbody>
+			</table>
+			
+		<div id="btn_group" align="center">
+				<button style="font-size: 1em" id="bt1" onclick="location.href='팀소개.html'"> 떠나GO 소개 </button>
+				<button style="font-size: 1em" id="bt2" onclick="location.href='대륙 선택.html'"> 대륙 선택 </button>
+				<button style="font-size: 1em" id="bt3" onclick="location.href='팀원소개.html'"> 팀원 정보 </button>
+				<button style="font-size: 1em" id="bt4" onclick="location.href='독일 현지 연락처.html'"> 항공편 알아보기 </button>
+				
+			</div>	
+    </header>
+
+    <main>
+        
+        <section style='line-height:250%' align="center" >
+			<table border="" style="width: 70%;" align="center" frame="void" rules="groups" cellpadding="10">
+				<tbody>
+				<tr style="width: 70%;">
+				<td style="width: 50%;" valign='center' align='center'>
+					
+					<div style="border-style:none" class="jb-wrap">
+						<div class="jb-image" onclick="movePageAmericas()"><img src="홈미주.png" alt=""></div>
+						<div class="jb-text" onclick="movePageAmericas()">
+							<font color="white"> Americas </font>
+						</div>
+					</div>
+				</td>
+				<td style="width: 50%;" valign="center" align="center">
+					<div style="border-style:none" class="jb-wrap">
+						<div class="jb-image" onclick="movePageNortheast()"><img src="홈동북아.png" alt=""></div>
+						<div class="jb-text" onclick="movePageNortheast()">
+							<font color="white"> Northeast </font>
+						</div>
+					</div>
+					
+				</tr>
+				</tbody>
+				<tbody>
+				<tr style="width: 70%;">
+				<td style="width: 50%;" valign='center' align='center'>
+					
+					<div style="border-style:none" class="jb-wrap">
+						<div class="jb-image" onclick="movePageSoutheast()"><img src="홈동남아.png" alt=""></div>
+						<div class="jb-text" onclick="movePageSoutheast()">
+							<font color="white"> Southeast </font>
+						</div>
+					</div>
+					
+				</td>
+				<td style="width: 50%;" valign="center" align="center">
+					
+					<div style="border-style:none" class="jb-wrap">
+						<div class="jb-image" onclick="movePageEurope()"><img src="홈유럽.png" alt=""></div>
+						<div class="jb-text" onclick="movePageEurope()">
+							<font color="white"> Europe </font>
+						</div>
+					</div>
+				</tr>
+				</tbody>
+			</table>
+					
+        </section>
+		
+		
+        <section>
+			
+			
+        </section>
+		
+		<section>
+            
+        </section>
+		
+		<section>
+           
+        </section>
+			
+		<section>
+           
+        </section>
+		
+		<section>
+            
+        </section>
+		
+    </main>
+
+    <div> </div>
+
+    <footer>
+        
+    </footer>
+</body>
+</html>
+

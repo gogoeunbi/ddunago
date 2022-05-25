@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> 독일 상세 페이지 </title>
+	<style>
+       input[type=text]{
+		width: 200px;
+		height: 30px;
+		border-color: skyblue;
+		border-radius: 5px;
+	   }
+	   input[type=button]{
+		width: 210px;
+		height: 30px;
+		border-color: skyblue;
+		border-radius: 5px;
+		background-color: white;
+	   }
+    </style>
+	<script>
+		var a;
+		
+		function f1_1(){
+			a = document.getElementById("id1");
+			a.value = "";
+		}
+		function f1_2(){
+			a = document.getElementById("id1");
+			if (a.value == ""){
+				a.value = "아이디를 입력하세요";
+			}
+		}
+		
+		function f2_1(){
+			a = document.getElementById("password");
+			a.value = "";
+		}
+		function f2_2(){
+			a = document.getElementById("password");
+			if (a.value == ""){
+			a.value = "비밀번호를 입력하세요";
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<header align="center">
+			<br><br><br>
+			<img name="ig" src="떠나고 로고.png" width="100px" height="100px" border="0"> <br>
+			<h1> 지금 당장 떠나GO! </h1> 
+    </header>
+
+    <main>
+        
+        <section style='line-height:250%' align="center" >
+			
+			<script>
+				function login(){
+					var obj = document.getElementById("id1")
+					var obj2 = document.getElementById("password")
+					var exp = /^[0-9a-z]+$/;
+					var exp2 = /^[a-z]+$/;
+			
+					if((obj.value == "gachon123" && obj2.value == "gachon123123")){
+						alert("환영합니다. 지금 바로 떠나GO!");
+						location.href="홈화면.html";
+					}else{
+						alert("아이디 혹은 비밀번호가 올바르지 않습니다.");
+					}
+				}
+				
+			</script>
+			
+			
+			<input type="text" id="id1" value="아이디를 입력하세요" onfocus="f1_1()" onblur="f1_2()"> <br> 
+			<input type="text" id="password" value="비밀번호를 입력하세요" onfocus="f2_1()" onblur="f2_2()"> <br> 
+			<input type="button" id="login" value="Login" onclick="login()">
+			
+        </section>
+		
+		
+        <section>
+			
+			
+        </section>
+		
+		<section>
+            
+        </section>
+		
+		<section>
+           
+        </section>
+			
+		<section>
+           
+        </section>
+		
+		<section>
+            
+        </section>
+		
+    </main>
+
+    <div> </div>
+
+    <footer>
+        
+    </footer>
+</body>
+</html>
+
